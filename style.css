@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
+    background-color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -57,7 +57,8 @@ h1 {
     width: 300px;
     display: flex;
     margin-top: 30px;
-    border: 1px dotted #FFF;
+    border: 1px solid blue;
+    box-shadow: 0 0 10px blue;
     padding: 10px;
 }
 .infoitem {
@@ -75,9 +76,20 @@ h1 {
 }
 
 .reset {
-    border: 1px solid #000;
+    border: 1px solid blue;
     background-color: rgba(0, 0, 0, 0.2);
     color: #FFF;
     padding: 10px;
     margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s linear;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.reset:hover {
+    background-color: blue;
+    box-shadow: 0 0 30px blue;
 }

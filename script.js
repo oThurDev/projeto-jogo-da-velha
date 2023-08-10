@@ -108,7 +108,6 @@ function checkGame() {
     } else if(checkWinnerFor('o')) {
         warning = "O"
         playing = false
-        alert("acabou")
     } else if(isFull()) {
         warning = "Deu velha"
         playing = false
